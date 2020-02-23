@@ -25,7 +25,11 @@ $("li").click(function () {
     $(this).toggleClass("completed");
 });
 
-$("li span").click(function () {
-    console.log('famous CONSOLE>LOGG');
-    $(this).parent().css("display", "none");
+$("li span").click(function (event) {
+    // $(this).parent().css("display", "none");
+    // $(this).parent().remove();
+    $(this).parent().fadeOut(500, function () {
+        $(this).remove()
+    });
+    event.stopPropagation();
 });
