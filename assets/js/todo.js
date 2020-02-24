@@ -61,6 +61,6 @@ $("input[type='text']").keypress(function (event) {
         //$("ul").append("<li><span>X</span> " + newTodo + "</li>")
 
         // Refactoring the above with template literals
-        $("ul").append(`<li><span>X</span> ${newTodo} </li>`);
+        $("ul").append(`<li><i class="fas fa-trash-alt" style="color: red"></i> ${newTodo} </li>`);
     }
 });
