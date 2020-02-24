@@ -64,3 +64,13 @@ $("input[type='text']").keypress(function (event) {
         $("ul").append(`<li><i class="fas fa-trash-alt" style="color: red"></i> ${newTodo} </li>`);
     }
 });
+
+$(".fa-plus").click(function () {
+    console.log('click');
+    // $("input[type='text']").fadeToggle();
+});
+
+// $(".fa-plus").on('click', 'i', function () {
+//     console.log('click');
+//     $("input[type='text']").fadeToggle();
+// })
